@@ -22,39 +22,43 @@
 namespace clang {
 
 std::string getClangRepositoryPath() {
-#if defined(CLANG_REPOSITORY_STRING)
-  return CLANG_REPOSITORY_STRING;
-#else
-#ifdef CLANG_REPOSITORY
-  return CLANG_REPOSITORY;
-#else
-  return "";
-#endif
-#endif
+// #if defined(CLANG_REPOSITORY_STRING)
+//   return CLANG_REPOSITORY_STRING;
+// #else
+// #ifdef CLANG_REPOSITORY
+//   return CLANG_REPOSITORY;
+// #else
+//   return "";
+// #endif
+// #endif
+return "";
 }
 
 std::string getLLVMRepositoryPath() {
-#ifdef LLVM_REPOSITORY
-  return LLVM_REPOSITORY;
-#else
-  return "";
-#endif
+// #ifdef LLVM_REPOSITORY
+//   return LLVM_REPOSITORY;
+// #else
+//   return "";
+// #endif
+return "";
 }
 
 std::string getClangRevision() {
-#ifdef CLANG_REVISION
-  return CLANG_REVISION;
-#else
-  return "";
-#endif
+// #ifdef CLANG_REVISION
+//   return CLANG_REVISION;
+// #else
+//   return "";
+// #endif
+return "";
 }
 
 std::string getLLVMRevision() {
-#ifdef LLVM_REVISION
-  return LLVM_REVISION;
-#else
-  return "";
-#endif
+// #ifdef LLVM_REVISION
+//   return LLVM_REVISION;
+// #else
+//   return "";
+// #endif
+return "";
 }
 
 std::string getClangFullRepositoryVersion() {
